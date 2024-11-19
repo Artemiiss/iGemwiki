@@ -25,7 +25,7 @@ for web development.
 2. Install the dependencies:
 
    ```bash
-   yarn install
+   npm install
    ```
 
    ### Important:
@@ -35,7 +35,7 @@ for web development.
 
 3. Start the development server:
    ```bash
-   yarn run dev
+  npm run dev
    ```
 4. Navigate to the files you wish to edit:
    - The main App component can be found under `src/containers/App`
