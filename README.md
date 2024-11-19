@@ -35,7 +35,7 @@ for web development.
 
 3. Start the development server:
    ```bash
-  npm run dev
+   npm run dev
    ```
 4. Navigate to the files you wish to edit:
    - The main App component can be found under `src/containers/App`
