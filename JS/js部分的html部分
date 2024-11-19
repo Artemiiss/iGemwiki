@@ -1,0 +1,14 @@
+<div className={`flex-col ${styles['page']} ${props.className}`}>
+  <div className={`flex-col justify-start items-start ${styles['text-wrapper']}`}>
+    <span className={`${styles['font']} ${styles['text']}`}>选题背景</span>
+  </div>
+  <div className={`flex-col justify-start items-center relative ${styles['group']}`}>
+    <img
+      className={`${styles['image']}`}
+      src="https://ide.code.fun/api/image?token=667452e9920a6a00118eee6e&name=1d45c56603e5dc1e0e4344262fd28eac.png"
+    />
+    <div className={`flex-col justify-start items-start ${styles['text-wrapper_2']} ${styles['pos']}`}>
+      <span className={`${styles['font']} ${styles['text_2']}`}>整体设计</span>
+    </div>
+  </div>
+</div>

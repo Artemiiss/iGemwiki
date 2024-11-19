@@ -1,0 +1,47 @@
+{
+  "name": "team-slug",
+  "version": "0.0.1",
+  "license": "CC-BY-4.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json,css}\"",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "better-react-mathjax": "^2.0.3",
+    "bootstrap": "^5.3.3",
+    "echart": "^0.1.3",
+    "lodash": "^4.17.21",
+    "mathjax": "^3.2.2",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18.2.0",
+    "react-player": "^2.16.0",
+    "react-router-dom": "^6.23.0",
+    "team-slug": "file:"
+  },
+  "devDependencies": {
+    "@babel/generator": "^7.25.6",
+    "@babel/parser": "^7.25.6",
+    "@babel/traverse": "^7.25.6",
+    "@popperjs/core": "^2.11.8",
+    "@types/lodash": "^4.17.7",
+    "@types/node": "^20.12.10",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "postcss": "^8.4.47",
+    "prettier": "^3.2.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-css-modules": "^0.0.1"
+  }
+}

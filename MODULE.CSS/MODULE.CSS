@@ -1,0 +1,48 @@
+.page {
+    padding-left: 1.5rem;
+    padding-top: 0.94rem;
+    background-color: #ffffff;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+  }
+  .text-wrapper {
+    margin-right: 0.63rem;
+    padding: 1.25rem 0 29.25rem;
+    background-image: url('https://ide.code.fun/api/image?token=667452e9920a6a00118eee6e&name=6113a616846ee2ca4d310af2ae00d629.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .font {
+    font-size: 1.5rem;
+    font-family: Inter;
+    line-height: 1.38rem;
+    color: #000000;
+  }
+  .text {
+    margin-left: 10.38rem;
+  }
+  .group {
+    padding-top: 30.91rem;
+  }
+  .image {
+    width: 97.5vw;
+    height: 52.8125vw;
+  }
+  .text-wrapper_2 {
+    padding: 2.13rem 0 27.88rem;
+    background-image: url('https://ide.code.fun/api/image?token=667452e9920a6a00118eee6e&name=a2145ff37262a9fd67792e681892bfbb.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .pos {
+    position: absolute;
+    left: 0;
+    right: 2.69rem;
+    top: 1rem;
+  }
+  .text_2 {
+    margin-left: 10.38rem;
+    line-height: 1.38rem;
+  }

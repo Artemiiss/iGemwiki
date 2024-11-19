@@ -1,0 +1,461 @@
+@font-face {
+  font-family: 'Navbarfont';
+  src: url('https://static.igem.wiki/teams/5432/navbarfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+}
+
+
+body {
+  padding-top: 74px;
+  color: #ffffff;
+  margin: 0; /* 去掉默认边距 */
+}
+
+.container {
+  margin: 0; /* 左右方向自动居中 */
+  padding: 0;
+  width: 100%;
+  max-width: none; 
+}
+
+.content-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('https://static.igem.wiki/teams/5432/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* 使用 background-repeat 设置不重复 */
+  
+}
+
+
+.content-container2 {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+}
+.ai-content{
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  height: calc(100vh - 48px);
+}
+.content {
+  width: calc(100% - 33%);
+  padding: 20px;
+  overflow: auto;
+  height:100vh;
+  scrollbar-width: none; /* 对 Firefox 隐藏滚动条 */
+  margin: 0;
+}
+.content2 {
+  width: 100%;
+  padding: 20px;
+  overflow: auto;
+  height:100vh;
+  scrollbar-width: none; /* 对 Firefox 隐藏滚动条 */
+  margin: 0;
+  justify-content: center;
+}
+.ai-scroll-content{
+  height: 100%;
+}
+
+.inserted-video {
+  display: block;
+  margin: 20px auto; /* 视频居中 */
+  max-width: 50%;
+  height: auto;
+}
+
+.content::-webkit-scrollbar {
+  display: none; /* 对 Chrome、Safari 隐藏滚动条 */
+}
+
+p {
+  text-align: justify; /* 只对 <p> 标签生效 */
+}
+
+.left-aligned {
+  margin-left: auto;
+}
+
+.dropdown-menu {
+  background-color: #4a60ad;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #ccdeff;
+  padding-left: 10px; /* 调整左侧内边距 */
+  padding-right: 10px; /* 调整右侧内边距 */
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #0b0a1a; /* 悬停时的背景颜色 */
+  border-radius: 20px; /* 调整圆角，使其更窄 */
+}
+
+/* 导航栏整体背景颜色为蓝色 */
+.navbar {
+  background-color: #4a60ad !important;
+  /* 蓝色背景 */
+  padding: 10px;
+  /* 添加内边距 */
+  display: flex;
+  /* 使用 Flexbox 布局 */
+  justify-content: space-between;
+  align-items: center;
+  /* 垂直居中对齐 */
+}
+
+/* 导航栏内部的黑色部分 */
+.navbar-content {
+  background-color: #0b0a1a;
+  /* 导航栏内部黑色背景 */
+  display: flex;
+  /* 使用 Flexbox 布局 */
+  align-items: center;
+  /* 垂直居中对齐 */
+  padding: 5px 10px;
+  /* 添加内边距以确保黑色背景和蓝色背景之间有空间 */
+  border-radius: 30px;
+  /* 设置黑色部分的圆角效果 */
+  margin-left: auto;
+  /* 使黑色部分向右对齐 */
+  flex-grow: 0;
+  margin-right:150px;
+}
+
+/* 导航链接的样式 */
+.navbar .nav-link,
+.navbar .dropdown-toggle {
+  font-family: 'Navbarfont', sans-serif;
+  color: #ccdeff!important;
+  /* 链接字体颜色 */
+  padding: 10px 15px;
+  /* 添加内边距 */
+  margin: 0;
+  /* 移除外边距 */
+  background-color: transparent;
+  /* 透明背景，以使用黑色背景 */
+}
+
+/* 悬停效果 */
+.navbar .nav-link:hover,
+.navbar .dropdown-toggle:hover {
+  background-color: #4a60ad;
+  /* 悬停时背景颜色与蓝色相匹配 */
+  border-radius: 30px;
+  /* 圆角效果 */
+}
+
+/* 确保导航项之间没有间隙 */
+.navbar .nav-item {
+  margin: 0;
+  /* 移除外边距 */
+}
+
+.navbar a:hover {
+  background-color: #0b0a1a;
+  /* 悬停时的颜色 */
+  border-radius: 15px;
+  /* 悬停时的圆角效果 */
+}font
+.navbar .nav-link,
+.navbar .dropdown-toggle {
+  font-family: 'Navbarfont', sans-serif;
+  color: #ccdeff!important;
+  padding: 10px 15px;
+  margin: 0;
+  background-color: transparent;
+}
+
+.dropdown-menu .dropdown-item {
+  font-family: 'Navbarfont', sans-serif;
+  color: #ccdeff;
+  padding: 10px;
+  margin: 0;
+  background-color: transparent;
+}
+
+
+
+.bg-dark {
+  background-color: #343a40;
+}
+
+.navbar-logos {
+  display: flex;
+  align-items: center;/* 垂直居中 */
+  margin-left: 20px;
+  flex-grow: 1;
+}
+
+.navbar-logo {
+  height: 40px;
+  margin-right: 30px; /* logo 之间的间距 */
+}
+
+/* 隐藏 NavDropdown 的小三角 */
+.navbar .dropdown-toggle::after {
+  display: none;
+}
+
+
+.home-container {
+  background-image: none; /* 去掉背景图片 */
+  position: relative;
+  z-index: 1;
+  padding: 10px;
+}
+
+
+.bg-hero {
+  background-color: #45b06cff;
+}
+
+.bg-whole {
+  background-color: #0b0a1a !important;
+  /* 背景颜色 */
+  background-size: cover;
+}
+
+/* CALLOUT */
+.bd-callout {
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #e9ecef;
+  border-left-width: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.bd-callout h4 {
+  margin-bottom: 0.25rem;
+}
+
+.bd-callout p:last-child {
+  margin-bottom: 0;
+}
+
+.bd-callout code {
+  border-radius: 0.25rem;
+}
+
+.bd-callout+.bd-callout {
+  margin-top: -0.25rem;
+}
+
+.bd-callout-info {
+  border-left-color: #5bc0de;
+}
+
+.bd-callout-warning {
+  border-left-color: #f0ad4e;
+}
+
+.bd-callout-danger {
+  border-left-color: #d9534f;
+}
+
+/* scroll-module */
+.scroll-module {
+  width: 33%;
+  padding: 20px;
+  max-height: 100vh; /* 使用 max-height 而不是 height */
+  overflow-y: auto; /* 只允许 Y 轴滚动 */
+  position: sticky;
+  top: 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  scrollbar-width: none;
+}
+
+
+/* toc 样式 */
+.toc {
+  position: sticky;
+  top: 20px; /* 距离顶部20px，方便用户在滚动时保持可见 */
+  max-height: calc(100vh - 20px); /* 确保它不会超出视口高度 */
+  overflow-y: auto; /* 如果目录内容超出视口，允许其滚动 */
+  background: rgba(255, 255, 255, 0.1); /* 设置整个目录的半透明背景 */
+  backdrop-filter: blur(10px); /* 整体应用磨砂效果 */
+  padding: 10px;
+  border-radius: 30px; /* 给整个目录圆角效果 */
+  scrollbar-width: none;
+}
+
+/* toc-item 样式 */
+.toc-item {
+  background: none; /* 去掉每个目录项的背景 */
+  padding: 10px;
+  font-size: 18px;
+  transition: font-size 0.3s ease, color 0.3s ease; /* 添加字体和颜色过渡 */
+  cursor: pointer;
+  margin: 5px 0; /* 加一点垂直间距 */
+  border-radius: 10px; /* 圆角边框 */
+  margin-bottom: 20px;
+  
+}
+.scroll-tab-item{
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+/* 高亮的 toc-item */
+.toc-item.active {
+  font-size: 24px;
+  font-weight: bold;
+  color: #45b06c;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* 高亮的 toc-item */
+.left-module-active.toc-item {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4a60ad;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toc::-webkit-scrollbar {
+  display: none; /* 隐藏 Chrome 和 Safari 中的滚动条 */
+}
+
+/* footer */
+.footer-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.footer-background {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 确保图片覆盖整个容器 */
+  z-index: 1; /* 设置图片的层级 */
+}
+
+.icon-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* 禁止事件影响背景图片 */
+}
+
+.footer-icon {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  pointer-events: all; /* 启用点击事件 */
+  transition: transform 0.3s ease;
+}
+
+.footer-icon:hover {
+  transform: scale(1.2); /* 鼠标悬停时放大 */
+}
+
+.footer-content {
+  position: absolute;
+  max-height: 25%; /* 文字区域最大高度为footer的1/4 */
+  bottom: 20px; /* 距离底部20px，确保文字位于底部偏上 */
+  left: 50%;
+  transform: translateX(-50%); /* 水平居中 */
+  color: white;
+  text-align: center;
+  z-index: 2;
+  font-size: clamp(14px, 2vw, 16px); 
+}
+
+.footer-text {
+  font-size: 14px; /* 缩小文字 */
+  line-height: 1.5; /* 行间距 */
+  white-space: nowrap;
+  margin: 0; /* 去掉默认外边距 */
+  line-height: 1.5;
+}
+
+.footer-content a {
+  color: #ffffff; /* 确保链接颜色与背景形成对比 */
+  text-decoration: underline;
+}
+
+.footer-content a:hover {
+  color: #45b06c; /* 悬停时的颜色变化 */
+}
+
+
+.media-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-row {
+  display: flex; /* 使用 Flexbox 布局 */
+  justify-content: center; /* 居中对齐 */
+  gap: 20px; /* 图片之间的间距 */
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.content img {
+  display: block;
+  margin:auto; /* 将图片水平居中 */
+  height: auto; /* 高度自适应，保持图片比例 */
+}
+
+
+.zoom-in {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.zoom-out {
+  opacity: 0;
+  transform: scale(0.9);
+  pointer-events: none; /* 防止滚轮滑动时影响淡出图片 */
+}
+
+/* Loading.css */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* 半透明背景 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* 确保在最上层 */
+}
+
+.loading-gif {
+  width: 150px; /* 根据需要调整大小 */
+  height: auto;
+}
